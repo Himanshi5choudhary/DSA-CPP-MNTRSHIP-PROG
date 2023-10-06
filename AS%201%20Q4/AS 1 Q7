@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 int ndigit(int q)
-{
+{ 
     int i=0;
     while(q>0)
     {
