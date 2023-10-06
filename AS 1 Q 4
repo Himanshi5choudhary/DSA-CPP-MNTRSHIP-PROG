@@ -1,0 +1,41 @@
+#include<iostream>
+using namespace std;
+int isp(int n)
+{
+    int i=2;
+    int v=0;
+    if (n==1||n==2)
+    {
+        return v;
+    }
+    else{
+        while(i<n)
+        {
+            if (n%i==0)
+            {
+                v=1;
+            }
+            i=i+1;
+        }
+        return v;
+
+    }
+}
+int main()
+{
+    int high,low;
+    cout<<"enter upper limit"<<endl;
+    cin>>high;
+    cout<<"enter lower limit"<<endl;
+    cin>>low;
+    cout<<"prime nums btw given range are"<<endl;
+    for (int k=low;k<=high;k++)
+    {
+        int check=isp(k);
+        if (check==0)
+        {
+            cout<<k<<endl;
+        }
+    }
+    return 0;
+}
